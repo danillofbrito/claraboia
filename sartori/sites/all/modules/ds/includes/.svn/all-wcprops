@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/claraboia/!svn/ver/28/branch/sprint_1/sites/all/modules/ds/includes
+END
+ds.contextual.inc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/claraboia/!svn/ver/28/branch/sprint_1/sites/all/modules/ds/includes/ds.contextual.inc
+END
+ds.displays.inc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/claraboia/!svn/ver/28/branch/sprint_1/sites/all/modules/ds/includes/ds.displays.inc
+END
+ds.registry.inc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/claraboia/!svn/ver/28/branch/sprint_1/sites/all/modules/ds/includes/ds.registry.inc
+END
+ds.revision.inc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/claraboia/!svn/ver/28/branch/sprint_1/sites/all/modules/ds/includes/ds.revision.inc
+END
+ds.field_ui.inc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/claraboia/!svn/ver/28/branch/sprint_1/sites/all/modules/ds/includes/ds.field_ui.inc
+END

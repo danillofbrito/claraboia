@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation
+END
+field_validation.default_field_validation_rules.inc
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/field_validation.default_field_validation_rules.inc
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/LICENSE.txt
+END
+field_validation.module
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/field_validation.module
+END
+field_validation.install
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/field_validation.install
+END
+field_validation_ui.info
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/field_validation_ui.info
+END
+field_validation.info
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/field_validation.info
+END
+field_validation_ui.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/field_validation_ui.admin.inc
+END
+field_validation_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/field_validation_validator.inc
+END
+field_validation_ui.module
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/field_validation_ui.module
+END

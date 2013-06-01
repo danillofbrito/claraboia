@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/claraboia/!svn/ver/27/branch/sprint_1/includes/filetransfer
+END
+ftp.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/claraboia/!svn/ver/27/branch/sprint_1/includes/filetransfer/ftp.inc
+END
+local.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/claraboia/!svn/ver/27/branch/sprint_1/includes/filetransfer/local.inc
+END
+ssh.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/claraboia/!svn/ver/27/branch/sprint_1/includes/filetransfer/ssh.inc
+END
+filetransfer.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/claraboia/!svn/ver/27/branch/sprint_1/includes/filetransfer/filetransfer.inc
+END

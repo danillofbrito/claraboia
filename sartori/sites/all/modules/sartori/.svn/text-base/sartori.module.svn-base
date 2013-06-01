@@ -1,0 +1,24 @@
+<?php
+
+function sartori_init(){
+
+	//Javascript's load
+	drupal_add_js(base_path()."sites/all/modules/sartori/js/jquery.validate.min.js");
+	drupal_add_js(base_path()."sites/all/modules/sartori/js/jquery.maskedinput.min.js");
+	drupal_add_js(base_path()."sites/all/modules/sartori/js/general.js");
+	
+}
+
+function sartori_form_alter(&$form, &$form_state, $form_id) {
+
+	//Add the field processo loading the title of processo dynamically
+	if ($form_id == "andamento_processual_node_form"){
+		//set default value for field_entity if provided
+		if (isset($_GET['processo'])) {
+			$entity_node = node_load($_GET['processo']);
+			if ($entity_node) {
+				$form['field_processo']['und'][0]['target_id']['#default_value'] = "$entity_node->title";
+			}
+		}
+	}
+}

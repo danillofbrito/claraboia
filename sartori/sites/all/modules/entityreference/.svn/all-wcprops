@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/claraboia/!svn/ver/47/branch/sprint_1/sites/all/modules/entityreference
+END
+entityreference.module
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/claraboia/!svn/ver/47/branch/sprint_1/sites/all/modules/entityreference/entityreference.module
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/claraboia/!svn/ver/35/branch/sprint_1/sites/all/modules/entityreference/LICENSE.txt
+END
+entityreference.install
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/claraboia/!svn/ver/35/branch/sprint_1/sites/all/modules/entityreference/entityreference.install
+END
+entityreference.info
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/claraboia/!svn/ver/35/branch/sprint_1/sites/all/modules/entityreference/entityreference.info
+END
+entityreference.feeds.inc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/claraboia/!svn/ver/35/branch/sprint_1/sites/all/modules/entityreference/entityreference.feeds.inc
+END
+entityreference.admin.css
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/claraboia/!svn/ver/35/branch/sprint_1/sites/all/modules/entityreference/entityreference.admin.css
+END
+entityreference.migrate.inc
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/claraboia/!svn/ver/35/branch/sprint_1/sites/all/modules/entityreference/entityreference.migrate.inc
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/claraboia/!svn/ver/35/branch/sprint_1/sites/all/modules/entityreference/README.txt
+END
+entityreference.devel_generate.inc
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/claraboia/!svn/ver/35/branch/sprint_1/sites/all/modules/entityreference/entityreference.devel_generate.inc
+END

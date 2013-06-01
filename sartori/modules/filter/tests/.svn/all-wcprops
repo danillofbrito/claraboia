@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/claraboia/!svn/ver/27/branch/sprint_1/modules/filter/tests
+END
+filter.url-input.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/claraboia/!svn/ver/27/branch/sprint_1/modules/filter/tests/filter.url-input.txt
+END
+filter.url-output.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/claraboia/!svn/ver/27/branch/sprint_1/modules/filter/tests/filter.url-output.txt
+END

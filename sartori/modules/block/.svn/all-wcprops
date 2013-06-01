@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/claraboia/!svn/ver/38/branch/sprint_1/modules/block
+END
+block.install
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/claraboia/!svn/ver/27/branch/sprint_1/modules/block/block.install
+END
+block.css
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/claraboia/!svn/ver/27/branch/sprint_1/modules/block/block.css
+END
+block.info
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/claraboia/!svn/ver/38/branch/sprint_1/modules/block/block.info
+END
+block.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/claraboia/!svn/ver/27/branch/sprint_1/modules/block/block.js
+END
+block-admin-display-form.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/claraboia/!svn/ver/27/branch/sprint_1/modules/block/block-admin-display-form.tpl.php
+END
+block.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/claraboia/!svn/ver/27/branch/sprint_1/modules/block/block.api.php
+END
+block.test
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/claraboia/!svn/ver/27/branch/sprint_1/modules/block/block.test
+END
+block.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/claraboia/!svn/ver/27/branch/sprint_1/modules/block/block.admin.inc
+END
+block.module
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/claraboia/!svn/ver/27/branch/sprint_1/modules/block/block.module
+END
+block.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/claraboia/!svn/ver/27/branch/sprint_1/modules/block/block.tpl.php
+END

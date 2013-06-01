@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/claraboia/!svn/ver/38/branch/sprint_1/modules/aggregator/tests
+END
+aggregator_test_atom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/claraboia/!svn/ver/27/branch/sprint_1/modules/aggregator/tests/aggregator_test_atom.xml
+END
+aggregator_test_rss091.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/claraboia/!svn/ver/27/branch/sprint_1/modules/aggregator/tests/aggregator_test_rss091.xml
+END
+aggregator_test.module
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/claraboia/!svn/ver/27/branch/sprint_1/modules/aggregator/tests/aggregator_test.module
+END
+aggregator_test.info
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/claraboia/!svn/ver/38/branch/sprint_1/modules/aggregator/tests/aggregator_test.info
+END

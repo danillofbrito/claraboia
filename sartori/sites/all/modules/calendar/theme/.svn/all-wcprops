@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/claraboia/!svn/ver/27/branch/sprint_1/sites/all/modules/calendar/theme
+END
+calendar-month.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/claraboia/!svn/ver/27/branch/sprint_1/sites/all/modules/calendar/theme/calendar-month.tpl.php
+END
+calendar-datebox.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/claraboia/!svn/ver/27/branch/sprint_1/sites/all/modules/calendar/theme/calendar-datebox.tpl.php
+END
+calendar-month-multiple-entity.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/claraboia/!svn/ver/27/branch/sprint_1/sites/all/modules/calendar/theme/calendar-month-multiple-entity.tpl.php
+END
+calendar-month-row.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/claraboia/!svn/ver/27/branch/sprint_1/sites/all/modules/calendar/theme/calendar-month-row.tpl.php
+END
+calendar-week.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/claraboia/!svn/ver/27/branch/sprint_1/sites/all/modules/calendar/theme/calendar-week.tpl.php
+END
+calendar-mini.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/claraboia/!svn/ver/27/branch/sprint_1/sites/all/modules/calendar/theme/calendar-mini.tpl.php
+END
+calendar-day.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/claraboia/!svn/ver/27/branch/sprint_1/sites/all/modules/calendar/theme/calendar-day.tpl.php
+END
+calendar-item.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/claraboia/!svn/ver/27/branch/sprint_1/sites/all/modules/calendar/theme/calendar-item.tpl.php
+END
+theme.inc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/claraboia/!svn/ver/27/branch/sprint_1/sites/all/modules/calendar/theme/theme.inc
+END
+calendar-month-col.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/claraboia/!svn/ver/27/branch/sprint_1/sites/all/modules/calendar/theme/calendar-month-col.tpl.php
+END
+calendar-style.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/claraboia/!svn/ver/27/branch/sprint_1/sites/all/modules/calendar/theme/calendar-style.tpl.php
+END
+calendar-year.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/claraboia/!svn/ver/27/branch/sprint_1/sites/all/modules/calendar/theme/calendar-year.tpl.php
+END
+calendar-week-overlap.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/claraboia/!svn/ver/27/branch/sprint_1/sites/all/modules/calendar/theme/calendar-week-overlap.tpl.php
+END
+calendar-day-overlap.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/claraboia/!svn/ver/27/branch/sprint_1/sites/all/modules/calendar/theme/calendar-day-overlap.tpl.php
+END

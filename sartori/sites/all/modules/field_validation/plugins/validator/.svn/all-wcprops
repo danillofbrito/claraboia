@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator
+END
+field_validation_unique_values_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_unique_values_validator.inc
+END
+field_validation_equal_values_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_equal_values_validator.inc
+END
+field_validation_php_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_php_validator.inc
+END
+field_validation_email_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_email_validator.inc
+END
+field_validation_oneofseveral_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_oneofseveral_validator.inc
+END
+field_validation_words_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_words_validator.inc
+END
+field_validation_match_field_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_match_field_validator.inc
+END
+field_validation_match_property_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_match_property_validator.inc
+END
+field_validation_url_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_url_validator.inc
+END
+field_validation_number_of_selections_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_number_of_selections_validator.inc
+END
+field_validation_unique_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_unique_validator.inc
+END
+field_validation_plain_text_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_plain_text_validator.inc
+END
+field_validation_blacklist_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_blacklist_validator.inc
+END
+field_validation_regex_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_regex_validator.inc
+END
+field_validation_date_range2_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_date_range2_validator.inc
+END
+field_validation_must_be_empty_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_must_be_empty_validator.inc
+END
+field_validation_pattern_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_pattern_validator.inc
+END
+field_validation_specific_value_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_specific_value_validator.inc
+END
+field_validation_length_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_length_validator.inc
+END
+field_validation_numeric2_validator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/claraboia/!svn/ver/30/branch/sprint_1/sites/all/modules/field_validation/plugins/validator/field_validation_numeric2_validator.inc
+END
