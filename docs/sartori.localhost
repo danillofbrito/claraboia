@@ -1,0 +1,24 @@
+<VirtualHost 127.0.0.3:80>
+      ServerName sartori.localhost
+      ServerAlias www.sartori.localhost
+
+      DocumentRoot "/var/www/claraboia/sartori"
+
+      <Directory "/var/www/claraboia/sartori">
+          Options Indexes FollowSymLinks MultiViews
+          AllowOverride All
+          Order allow,deny
+          Allow from all
+      </Directory>
+  </VirtualHost>
+
+<VirtualHost 127.0.0.3:443>
+      ServerName sartori.localhost
+      ServerAlias www.sartori.localhost
+
+      DocumentRoot "/var/www/claraboia/sartori"
+
+      SSLEngine on
+      SSLCertificateFile /etc/apache2/ssl/apache.crt
+      SSLCertificateKeyFile /etc/apache2/ssl/apache.key
+  </VirtualHost>
