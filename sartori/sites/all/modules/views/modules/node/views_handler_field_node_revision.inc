@@ -1,10 +1,4 @@
 <?php
-
-/**
- * @file
- * Definition of views_handler_field_node_revision.
- */
-
 /**
  * Contains the basic 'node_revision' field handler.
  */
@@ -27,7 +21,7 @@ class views_handler_field_node_revision extends views_handler_field_node {
   }
   function option_definition() {
     $options = parent::option_definition();
-    $options['link_to_node_revision'] = array('default' => FALSE, 'bool' => TRUE);
+    $options['link_to_node_revision'] = array('default' => FALSE);
     return $options;
   }
 
@@ -54,10 +48,7 @@ class views_handler_field_node_revision extends views_handler_field_node {
       $this->options['alter']['make_link'] = TRUE;
       $nid = $this->get_value($values, 'nid');
       $vid = $this->get_value($values, 'vid');
-      $this->options['alter']['path'] = 'node/' . $nid;
-      if ($nid != $vid) {
-        $this->options['alter']['path'] .= "/revisions/$vid/view";
-      }
+      $this->options['alter']['path'] = "node/" . $nid . '/revisions/' . $vid . '/view';
       if (module_exists('translation')) {
         $language = $this->get_value($values, 'language');
         $languages = language_list();

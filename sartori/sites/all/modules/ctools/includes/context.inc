@@ -508,19 +508,8 @@ function ctools_context_get_all_converters() {
 
 /**
  * Let the context convert an argument based upon the converter that was given.
- *
- * @param $context
- *   The context object
- * @param $converter
- *   The converter to use, which should be a string provided by the converter list.
- * @param $converter_options
- *   A n array of options to pass on to the generation function. For contexts
- *   that use token module, of particular use is 'sanitize' => FALSE which can
- *   get raw tokens. This should ONLY be used in values that will later be
- *   treated as unsafe user input since these values are by themselves unsafe.
- *   It is particularly useful to get raw values from Field API.
  */
-function ctools_context_convert_context($context, $converter, $converter_options = array()) {
+function ctools_context_convert_context($context, $converter) {
   // Contexts without plugins might be optional placeholders.
   if (empty($context->plugin)) {
     return;
@@ -529,12 +518,12 @@ function ctools_context_convert_context($context, $converter, $converter_options
   $value = $context->argument;
   $plugin = ctools_get_context($context->plugin);
   if ($function = ctools_plugin_get_function($plugin, 'convert')) {
-    $value = $function($context, $converter, $converter_options);
+    $value = $function($context, $converter);
   }
 
   foreach (module_implements('ctools_context_converter_alter') as $module) {
     $function = $module . '_ctools_context_converter_alter';
-    $function($context, $converter, $value, $converter_options);
+    $function($context, $converter, $value);
   }
 
   return $value;
@@ -630,7 +619,7 @@ function ctools_context_create_empty($type) {
 /**
  * Perform keyword and context substitutions.
  */
-function ctools_context_keyword_substitute($string, $keywords, $contexts, $converter_options = array()) {
+function ctools_context_keyword_substitute($string, $keywords, $contexts) {
   // Ensure a default keyword exists:
   $keywords['%%'] = '%';
 
@@ -644,7 +633,7 @@ function ctools_context_keyword_substitute($string, $keywords, $contexts, $conve
 
   // Look for context matches we we only have to convert known matches.
   $matches = array();
-  if (preg_match_all('/%(%|[a-zA-Z0-9_-]+(?:\:[a-zA-Z0-9_-]+)*)/us', $string, $matches)) {
+  if (preg_match_all('/%([a-zA-Z0-9%:_-]+)/us', $string, $matches)) {
     foreach ($matches[1] as $keyword) {
       // Ignore anything it finds with %%.
       if ($keyword[0] == '%') {
@@ -677,7 +666,7 @@ function ctools_context_keyword_substitute($string, $keywords, $contexts, $conve
         $keywords['%' . $keyword] = '';
       }
       else if (!empty($converter)) {
-        $keywords['%' . $keyword] = ctools_context_convert_context($context_keywords[$context], $converter, $converter_options);
+        $keywords['%' . $keyword] = ctools_context_convert_context($context_keywords[$context], $converter);
       }
       else {
         $keywords['%' . $keyword] = $context_keywords[$keyword]->title;

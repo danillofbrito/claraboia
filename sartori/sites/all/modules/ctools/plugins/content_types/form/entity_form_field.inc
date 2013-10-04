@@ -84,10 +84,8 @@ function ctools_entity_form_field_content_type_render($subtype, $conf, $panel_ar
   if (empty($field)) {
     return;
   }
-  $block = new stdClass();
 
   if (isset($context->form)) {
-    $block->content = array();
     $block->content[$field_name] = $context->form[$field_name];
     unset($context->form[$field_name]);
   }
@@ -104,12 +102,7 @@ function ctools_entity_form_field_content_type_render($subtype, $conf, $panel_ar
 function ctools_entity_form_field_content_type_admin_title($subtype, $conf, $context) {
   list($entity_type, $field_name) = explode(':', $subtype, 2);
 
-  if (!empty($context->restrictions)) {
-    $field = field_info_instance($entity_type, $field_name, $context->restrictions['type'][0]);
-  }
-  else {
-    $field = array('label' => $subtype);
-  }
+  $field = field_info_instance($entity_type, $field_name, $context->restrictions['type'][0]);
 
   return t('"@s" @field form', array('@s' => $context->identifier, '@field' => $field['label']));
 }

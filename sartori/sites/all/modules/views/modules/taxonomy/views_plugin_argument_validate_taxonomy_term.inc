@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Contains the 'taxonomy term' argument validator plugin.
@@ -27,7 +26,7 @@ class views_plugin_argument_validate_taxonomy_term extends views_plugin_argument
     $options = parent::option_definition();
     $options['vocabularies'] = array('default' => array());
     $options['type'] = array('default' => 'tid');
-    $options['transform'] = array('default' => FALSE, 'bool' => TRUE);
+    $options['transform'] = array('default' => FALSE);
 
     return $options;
   }
@@ -96,15 +95,15 @@ class views_plugin_argument_validate_taxonomy_term extends views_plugin_argument
         $query = db_select('taxonomy_term_data', 'td');
         $query->leftJoin('taxonomy_vocabulary', 'tv', 'td.vid = tv.vid');
         $query->fields('td');
+        $query->fields('tv', array('machine_name'));
         $query->condition('td.tid', $argument);
         $query->addTag('term_access');
         $term = $query->execute()->fetchObject();
         if (!$term) {
           return FALSE;
         }
-        $term = taxonomy_term_load($term->tid);
-        $this->argument->validated_title = check_plain(entity_label('taxonomy_term', $term));
-        return empty($vocabularies) || !empty($vocabularies[$term->vocabulary_machine_name]);
+        $this->argument->validated_title = check_plain($term->name);
+        return empty($vocabularies) || !empty($vocabularies[$term->machine_name]);
 
       case 'tids':
         // An empty argument is not a term so doesn't pass.
@@ -151,8 +150,8 @@ class views_plugin_argument_validate_taxonomy_term extends views_plugin_argument
               $validated_cache[$term->tid] = FALSE;
               return FALSE;
             }
-            $term = taxonomy_term_load($term->tid);
-            $titles[] = $validated_cache[$term->tid] = check_plain(entity_label('taxonomy_term', $term));
+
+            $titles[] = $validated_cache[$term->tid] = check_plain($term->name);
             unset($test[$term->tid]);
           }
         }
@@ -185,8 +184,7 @@ class views_plugin_argument_validate_taxonomy_term extends views_plugin_argument
           if ($type == 'convert') {
             $this->argument->argument = $term->tid;
           }
-          $term = taxonomy_term_load($term->tid);
-          $this->argument->validated_title = check_plain(entity_label('taxonomy_term', $term));
+          $this->argument->validated_title = check_plain($term->name);
           return TRUE;
         }
         return FALSE;

@@ -3,9 +3,9 @@
 function sartori_init(){
 
 	//Javascript's load
-	drupal_add_js(base_path()."sites/all/modules/sartori/js/jquery.validate.min.js");
-	drupal_add_js(base_path()."sites/all/modules/sartori/js/jquery.maskedinput.min.js");
-	drupal_add_js(base_path()."sites/all/modules/sartori/js/general.js");
+	// drupal_add_js(base_path()."sites/all/modules/sartori/js/jquery.validate.min.js");
+	// drupal_add_js(base_path()."sites/all/modules/sartori/js/jquery.maskedinput.min.js");
+	// drupal_add_js(base_path()."sites/all/modules/sartori/js/general.js");
 	
 }
 
