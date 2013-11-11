@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/includes
+END
+ajax.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/includes/ajax.inc
+END
+analyze.inc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/includes/analyze.inc
+END
+cache.inc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/includes/cache.inc
+END
+form.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/includes/form.inc
+END
+admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/includes/admin.inc
+END
+base.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/includes/base.inc
+END
+view.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/includes/view.inc
+END
+handlers.inc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/includes/handlers.inc
+END
+plugins.inc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/includes/plugins.inc
+END

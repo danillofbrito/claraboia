@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/modules/aggregator
+END
+views_handler_argument_aggregator_category_cid.inc
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/modules/aggregator/views_handler_argument_aggregator_category_cid.inc
+END
+views_plugin_row_aggregator_rss.inc
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/modules/aggregator/views_plugin_row_aggregator_rss.inc
+END
+views_handler_field_aggregator_category.inc
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/modules/aggregator/views_handler_field_aggregator_category.inc
+END
+views_handler_field_aggregator_xss.inc
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/modules/aggregator/views_handler_field_aggregator_xss.inc
+END
+views_handler_field_aggregator_title_link.inc
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/modules/aggregator/views_handler_field_aggregator_title_link.inc
+END
+views_handler_filter_aggregator_category_cid.inc
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/modules/aggregator/views_handler_filter_aggregator_category_cid.inc
+END
+views_handler_argument_aggregator_fid.inc
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/modules/aggregator/views_handler_argument_aggregator_fid.inc
+END
+views_handler_argument_aggregator_iid.inc
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/modules/aggregator/views_handler_argument_aggregator_iid.inc
+END

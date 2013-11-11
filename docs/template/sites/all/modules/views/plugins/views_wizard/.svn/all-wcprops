@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/plugins/views_wizard
+END
+views_ui_users_views_wizard.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/plugins/views_wizard/views_ui_users_views_wizard.class.php
+END
+file_managed.inc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/plugins/views_wizard/file_managed.inc
+END
+views_ui_comment_views_wizard.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/plugins/views_wizard/views_ui_comment_views_wizard.class.php
+END
+views_ui_node_revision_views_wizard.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/plugins/views_wizard/views_ui_node_revision_views_wizard.class.php
+END
+views_ui_node_views_wizard.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/plugins/views_wizard/views_ui_node_views_wizard.class.php
+END
+views_ui_taxonomy_term_views_wizard.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/plugins/views_wizard/views_ui_taxonomy_term_views_wizard.class.php
+END
+users.inc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/plugins/views_wizard/users.inc
+END
+comment.inc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/plugins/views_wizard/comment.inc
+END
+node_revision.inc
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/plugins/views_wizard/node_revision.inc
+END
+views_ui_base_views_wizard.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/plugins/views_wizard/views_ui_base_views_wizard.class.php
+END
+views_ui_file_managed_views_wizard.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/plugins/views_wizard/views_ui_file_managed_views_wizard.class.php
+END
+node.inc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/plugins/views_wizard/node.inc
+END
+taxonomy_term.inc
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/views/plugins/views_wizard/taxonomy_term.inc
+END

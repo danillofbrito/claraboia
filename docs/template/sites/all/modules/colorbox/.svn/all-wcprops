@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/colorbox
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/colorbox/README.txt
+END
+colorbox.module
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/colorbox/colorbox.module
+END
+colorbox.install
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/colorbox/colorbox.install
+END
+colorbox-insert-image.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/colorbox/colorbox-insert-image.tpl.php
+END
+colorbox.make.example
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/colorbox/colorbox.make.example
+END
+colorbox.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/colorbox/colorbox.pages.inc
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/colorbox/LICENSE.txt
+END
+colorbox.theme.inc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/colorbox/colorbox.theme.inc
+END
+colorbox.info
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/colorbox/colorbox.info
+END
+colorbox.variable.inc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/colorbox/colorbox.variable.inc
+END
+colorbox.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/colorbox/colorbox.api.php
+END
+colorbox.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/colorbox/colorbox.admin.inc
+END

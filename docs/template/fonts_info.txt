@@ -1,0 +1,4 @@
+List of Fonts used in template 
+
+Dorsa		http://www.google.com/webfonts/specimen/Dorsa
+Oswald		http://www.google.com/webfonts/specimen/Oswald

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/ctools/plugins/content_types/user_context
+END
+user_profile.inc
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/ctools/plugins/content_types/user_context/user_profile.inc
+END
+user_signature.inc
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/ctools/plugins/content_types/user_context/user_signature.inc
+END
+icon_user.png
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/ctools/plugins/content_types/user_context/icon_user.png
+END
+profile_fields_pane.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/ctools/plugins/content_types/user_context/profile_fields_pane.tpl.php
+END
+profile_fields.inc
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/ctools/plugins/content_types/user_context/profile_fields.inc
+END
+user_picture.inc
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/ctools/plugins/content_types/user_context/user_picture.inc
+END

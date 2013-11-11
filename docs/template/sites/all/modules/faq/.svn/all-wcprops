@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/faq
+END
+faq.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/faq/faq.admin.inc
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/faq/README.txt
+END
+faq.module
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/faq/faq.module
+END
+faq.install
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/faq/faq.install
+END
+faq.css
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/faq/faq.css
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/faq/LICENSE.txt
+END
+faq.info
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/faq/faq.info
+END
+faq.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/faq/faq.js
+END
+faq.variable.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/faq/faq.variable.inc
+END
+faq.test
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/faq/faq.test
+END

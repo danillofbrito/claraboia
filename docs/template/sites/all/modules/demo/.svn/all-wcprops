@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/demo
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/demo/LICENSE.txt
+END
+demo_reset.info
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/demo/demo_reset.info
+END
+demo.admin.css
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/demo/demo.admin.css
+END
+demo.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/demo/demo.api.php
+END
+demo.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/demo/demo.admin.inc
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/demo/CHANGELOG.txt
+END
+database_mysql_dump.inc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/demo/database_mysql_dump.inc
+END
+demo.admin.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/demo/demo.admin.js
+END
+demo.module
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/demo/demo.module
+END
+demo.install
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/demo/demo.install
+END
+demo_reset.module
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/demo/demo_reset.module
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/demo/README.txt
+END
+demo_reset.install
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/demo/demo_reset.install
+END
+demo.info
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/demo/demo.info
+END
