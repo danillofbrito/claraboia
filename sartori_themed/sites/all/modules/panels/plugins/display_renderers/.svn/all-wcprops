@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/panels/plugins/display_renderers
+END
+panels_renderer_simple.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/panels/plugins/display_renderers/panels_renderer_simple.class.php
+END
+editor.inc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/panels/plugins/display_renderers/editor.inc
+END
+simple.inc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/panels/plugins/display_renderers/simple.inc
+END
+panels_renderer_standard.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/panels/plugins/display_renderers/panels_renderer_standard.class.php
+END
+panels_renderer_editor.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/panels/plugins/display_renderers/panels_renderer_editor.class.php
+END
+standard.inc
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/panels/plugins/display_renderers/standard.inc
+END

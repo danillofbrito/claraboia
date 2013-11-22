@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the sartori_features feature.
+ */
+
+include_once 'sartori_features.features.inc';

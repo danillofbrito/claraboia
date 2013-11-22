@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/wysiwyg
+END
+wysiwyg.init.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/wysiwyg/wysiwyg.init.js
+END
+wysiwyg.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/wysiwyg/wysiwyg.api.php
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/wysiwyg/LICENSE.txt
+END
+wysiwyg.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/wysiwyg/wysiwyg.admin.inc
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/wysiwyg/CHANGELOG.txt
+END
+wysiwyg.api.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/wysiwyg/wysiwyg.api.js
+END
+wysiwyg.module
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/wysiwyg/wysiwyg.module
+END
+wysiwyg.install
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/wysiwyg/wysiwyg.install
+END
+wysiwyg.dialog.inc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/wysiwyg/wysiwyg.dialog.inc
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/wysiwyg/README.txt
+END
+wysiwyg.info
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/wysiwyg/wysiwyg.info
+END
+wysiwyg.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/wysiwyg/wysiwyg.js
+END
+wysiwyg-dialog-page.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/wysiwyg/wysiwyg-dialog-page.tpl.php
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/page_manager_redirect/page_manager_redirect_examples/pages/default
+END
+home_tab.page.inc
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/page_manager_redirect/page_manager_redirect_examples/pages/default/home_tab.page.inc
+END
+own_page_redirect.page.inc
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/page_manager_redirect/page_manager_redirect_examples/pages/default/own_page_redirect.page.inc
+END
+node_view_story_author_redirect.handler.inc
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/page_manager_redirect/page_manager_redirect_examples/pages/default/node_view_story_author_redirect.handler.inc
+END

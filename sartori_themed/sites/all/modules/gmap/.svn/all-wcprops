@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/LICENSE.txt
+END
+gmap.strings.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap.strings.php
+END
+GMAP-MACRO-DICTIONARY.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/GMAP-MACRO-DICTIONARY.txt
+END
+gmap_macro_builder.info
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap_macro_builder.info
+END
+gmap_location.info
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap_location.info
+END
+gmap_parse_macro.inc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap_parse_macro.inc
+END
+THEMING.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/THEMING.txt
+END
+gmap_settings_ui.inc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap_settings_ui.inc
+END
+gmap.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap.php
+END
+gmap_taxonomy.info
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap_taxonomy.info
+END
+gmap.info
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap.info
+END
+gmap_macro_builder.install
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap_macro_builder.install
+END
+gmap_taxonomy.views.inc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap_taxonomy.views.inc
+END
+gmap.views.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap.views.inc
+END
+gmap_polyutil.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap_polyutil.inc
+END
+gmap_plugin_style_gmap.inc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap_plugin_style_gmap.inc
+END
+gmap_macro_builder.module
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap_macro_builder.module
+END
+gmap_location.module
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap_location.module
+END
+WARNING_D7_ONLY
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/WARNING_D7_ONLY
+END
+gmap-view-gmap.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap-view-gmap.tpl.php
+END
+gmap_taxonomy.module
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap_taxonomy.module
+END
+NOTES.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/NOTES.txt
+END
+gmap.module
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap.module
+END
+gmap_markerinfo.inc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap_markerinfo.inc
+END
+gmap.css
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap.css
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/README.txt
+END
+gmap_plugin_style_gmapextended.inc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap_plugin_style_gmapextended.inc
+END
+gmap_location.install
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap_location.install
+END
+TODO.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/TODO.txt
+END
+gmap.strings.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap.strings.inc
+END
+gmap_taxonomy.install
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap_taxonomy.install
+END
+gmap.install
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/claraboia/!svn/ver/51/docs/template/sites/all/modules/gmap/gmap.install
+END
