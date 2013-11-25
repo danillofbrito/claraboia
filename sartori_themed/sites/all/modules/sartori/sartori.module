@@ -13,11 +13,11 @@ function sartori_init(){
  * Implements hook_form_alter.
  */
 function sartori_form_alter(&$form, &$form_state, $form_id) {
-	// echo "<pre>";
-	// print_r($form);
-	// die();
-
-
+	// Fill the title of the node on the validation.
+	if ($form_id == "contato_node_form"){
+		$form['title']['#required'] = FALSE;
+		$form['#validate'][] = 'sartori_contato_validate';
+	}
 
 	if ($form_id == "dados_da_pasta_node_form"){
 		// New nodes
@@ -30,6 +30,18 @@ function sartori_form_alter(&$form, &$form_state, $form_id) {
 		else {
 	// 		$form['field_n_inicial']['#disabled'] = TRUE;
 		}
+	}
+}
+
+/**
+ * Implements hook_form_validate.
+ */
+function sartori_contato_validate(&$form, &$form_state) {
+	if ($form_state['values']['field_tipo_de_pessoa'][LANGUAGE_NONE][0]['value'] == 'fisica') {
+		$form_state['values']['title'] = $form_state['values']['field_nome'][LANGUAGE_NONE][0]['value'];
+	}
+	else {
+		$form_state['values']['title'] = $form_state['values']['field_razao_social'][LANGUAGE_NONE][0]['value'];
 	}
 }
 
