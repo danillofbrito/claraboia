@@ -5,20 +5,49 @@ function sartori_init(){
 	//Javascript's load
 	// drupal_add_js(base_path()."sites/all/modules/sartori/js/jquery.validate.min.js");
 	// drupal_add_js(base_path()."sites/all/modules/sartori/js/jquery.maskedinput.min.js");
-	drupal_add_js(base_path()."sites/all/modules/sartori/js/general.js");
+	// drupal_add_js(base_path()."sites/all/modules/sartori/js/general.js");
 
 }
 
+/**
+ * Implements hook_form_alter.
+ */
 function sartori_form_alter(&$form, &$form_state, $form_id) {
+	// echo "<pre>";
+	// print_r($form);
+	// die();
 
-	//Add the field processo loading the title of processo dynamically
-	// if ($form_id == "andamento_processual_node_form"){
-		//set default value for field_entity if provided
-		// if (isset($_GET['processo'])) {
-			// $entity_node = node_load($_GET['processo']);
-			// if ($entity_node) {
-				// $form['field_processo']['und'][0]['target_id']['#default_value'] = "$entity_node->title";
-			// }
-		// }
-	// }
+
+
+	if ($form_id == "dados_da_pasta_node_form"){
+		// New nodes
+		if (!isset($form['nid']['#value'])) {
+			global $user;
+			$form['field_advogado_responsavel'][LANGUAGE_NONE]['#default_value'] = array($user->uid);
+			$form['title']['#default_value'] = sartori_generate_next_pasta_id();
+		}
+		// Existing nodes
+		else {
+	// 		$form['field_n_inicial']['#disabled'] = TRUE;
+		}
+	}
+}
+
+/**
+ * Function to generate the next id for pasta.
+ * @return string
+ */
+function sartori_generate_next_pasta_id() {
+	$last_id = db_select('node', 'n')
+    ->fields('n', array('title'))
+    ->condition('type', 'dados_da_pasta')
+    ->orderBy('title', 'DESC')
+    ->range(0,1)
+    ->execute()
+    ->fetchAssoc();
+  $id_number = str_replace('Proc-', '', $last_id['title']);
+  $id_number += 1;
+  $remaining_chars = 7 - drupal_strlen($id_number);
+  $next_id = 'Proc-' . str_repeat('0', $remaining_chars) . $id_number;
+  return $next_id;
 }

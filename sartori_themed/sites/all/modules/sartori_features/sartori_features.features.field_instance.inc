@@ -10,52 +10,6 @@
 function sartori_features_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-acao-body'
-  $field_instances['node-acao-body'] = array(
-    'bundle' => 'acao',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'body',
-    'label' => 'Descrição',
-    'required' => 0,
-    'settings' => array(
-      'display_summary' => 1,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 31,
-    ),
-  );
-
   // Exported field_instance: 'node-andamento_processual-field_data'
   $field_instances['node-andamento_processual-field_data'] = array(
     'bundle' => 'andamento_processual',
@@ -335,6 +289,12 @@ function sartori_features_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 6,
       ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_bairro',
@@ -351,7 +311,7 @@ function sartori_features_field_default_field_instances() {
         'size' => 30,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 48,
     ),
   );
 
@@ -369,6 +329,12 @@ function sartori_features_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 9,
       ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_cep',
@@ -385,12 +351,55 @@ function sartori_features_field_default_field_instances() {
         'size' => 10,
       ),
       'type' => 'text_textfield',
-      'weight' => 10,
+      'weight' => 51,
     ),
   );
 
-  // Exported field_instance: 'node-contato-field_cidade'
-  $field_instances['node-contato-field_cidade'] = array(
+  // Exported field_instance: 'node-contato-field_cnpj_nao_disponivel'
+  $field_instances['node-contato-field_cnpj_nao_disponivel'] = array(
+    'bundle' => 'contato',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 46,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_cnpj_nao_disponivel',
+    'label' => 'CNPJ não disponível',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_codigo_empresa'
+  $field_instances['node-contato-field_codigo_empresa'] = array(
     'bundle' => 'contato',
     'default_value' => NULL,
     'deleted' => 0,
@@ -401,12 +410,18 @@ function sartori_features_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 44,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_cidade',
-    'label' => 'Cidade',
+    'field_name' => 'field_codigo_empresa',
+    'label' => 'Código',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -419,12 +434,55 @@ function sartori_features_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 5,
     ),
   );
 
-  // Exported field_instance: 'node-contato-field_cnpj'
-  $field_instances['node-contato-field_cnpj'] = array(
+  // Exported field_instance: 'node-contato-field_colaborador_do_escritorio'
+  $field_instances['node-contato-field_colaborador_do_escritorio'] = array(
+    'bundle' => 'contato',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'A opção [Colaborador do escritório] define a possibilidade de o contato ser o responsável (Advogado Responsável) por Pastas de Processos e Pastas de Serviços.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 33,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_colaborador_do_escritorio',
+    'label' => 'Colaborador do escritório',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 41,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_complemento'
+  $field_instances['node-contato-field_complemento'] = array(
     'bundle' => 'contato',
     'default_value' => NULL,
     'deleted' => 0,
@@ -435,13 +493,18 @@ function sartori_features_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 40,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_cnpj',
-    'label' => 'CNPJ',
+    'field_name' => 'field_complemento',
+    'label' => 'Complemento',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -451,10 +514,146 @@ function sartori_features_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 25,
+        'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 47,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_cpf_nao_disponivel'
+  $field_instances['node-contato-field_cpf_nao_disponivel'] = array(
+    'bundle' => 'contato',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 31,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_cpf_nao_disponivel',
+    'label' => 'CPF não disponível',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 47,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_data_de_nascimento'
+  $field_instances['node-contato-field_data_de_nascimento'] = array(
+    'bundle' => 'contato',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+        ),
+        'type' => 'date_default',
+        'weight' => 28,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_data_de_nascimento',
+    'label' => 'Data de nascimento',
+    'required' => 0,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'increment' => 15,
+        'input_format' => 'd/m/Y - H:i:s',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'text_parts' => array(),
+        'year_range' => '1900:+0',
+      ),
+      'type' => 'date_popup',
+      'weight' => 39,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_doc_de_identidade'
+  $field_instances['node-contato-field_doc_de_identidade'] = array(
+    'bundle' => 'contato',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 25,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_doc_de_identidade',
+    'label' => 'Doc. de identidade',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 36,
     ),
   );
 
@@ -472,6 +671,12 @@ function sartori_features_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 10,
       ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_email',
@@ -488,7 +693,7 @@ function sartori_features_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 11,
+      'weight' => 52,
     ),
   );
 
@@ -506,10 +711,16 @@ function sartori_features_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 5,
       ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_endereco',
-    'label' => 'Endereço',
+    'label' => 'Rua / Número',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -522,41 +733,85 @@ function sartori_features_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 46,
     ),
   );
 
-  // Exported field_instance: 'node-contato-field_escritorio'
-  $field_instances['node-contato-field_escritorio'] = array(
+  // Exported field_instance: 'node-contato-field_endereco_para'
+  $field_instances['node-contato-field_endereco_para'] = array(
     'bundle' => 'contato',
     'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Cada contato possuirá somente um endereço para correspondência, cobrança e/ou faturamento, não obrigatoriamente o mesmo.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 42,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_endereco_para',
+    'label' => 'Definir como endereço para',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 59,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_estado_civil'
+  $field_instances['node-contato-field_estado_civil'] = array(
+    'bundle' => 'contato',
+    'default_value' => array(
+      0 => array(
+        'value' => 'solteiro',
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 14,
+        'type' => 'list_default',
+        'weight' => 23,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_escritorio',
-    'label' => 'Escritório',
-    'required' => 0,
+    'field_name' => 'field_estado_civil',
+    'label' => 'Estado Civil',
+    'required' => 1,
     'settings' => array(
-      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 2,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 34,
     ),
   );
 
@@ -574,6 +829,12 @@ function sartori_features_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 3,
       ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_insc_estadual',
@@ -590,7 +851,7 @@ function sartori_features_field_default_field_instances() {
         'size' => 18,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -608,6 +869,12 @@ function sartori_features_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 4,
       ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_insc_municipal',
@@ -624,7 +891,740 @@ function sartori_features_field_default_field_instances() {
         'size' => 18,
       ),
       'type' => 'text_textfield',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_justificativa_cnpj'
+  $field_instances['node-contato-field_justificativa_cnpj'] = array(
+    'bundle' => 'contato',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 47,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_justificativa_cnpj',
+    'label' => 'Justificativa',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_justificativa_cpf'
+  $field_instances['node-contato-field_justificativa_cpf'] = array(
+    'bundle' => 'contato',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 48,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_justificativa_cpf',
+    'label' => 'Justificativa',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 48,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_local'
+  $field_instances['node-contato-field_local'] = array(
+    'bundle' => 'contato',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '(ex: residência, matriz, escritório, secretaria...)',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 35,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_local',
+    'label' => 'Local',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 45,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_localizacao'
+  $field_instances['node-contato-field_localizacao'] = array(
+    'bundle' => 'contato',
+    'default_value' => array(
+      0 => array(
+        'tid' => 31,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 34,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_localizacao',
+    'label' => 'Localização',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'shs',
+      'settings' => array(
+        'shs' => array(
+          'create_new_levels' => 0,
+          'create_new_terms' => 1,
+          'force_deepest' => 1,
+          'node_count' => 0,
+        ),
+      ),
+      'type' => 'taxonomy_shs',
+      'weight' => 50,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_matricula_codigo'
+  $field_instances['node-contato-field_matricula_codigo'] = array(
+    'bundle' => 'contato',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 27,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_matricula_codigo',
+    'label' => 'Matrícula / Código',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 38,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_n_titulo_de_eleitor'
+  $field_instances['node-contato-field_n_titulo_de_eleitor'] = array(
+    'bundle' => 'contato',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 29,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_n_titulo_de_eleitor',
+    'label' => 'Nº Título de eleitor',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 40,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_nacionalidade'
+  $field_instances['node-contato-field_nacionalidade'] = array(
+    'bundle' => 'contato',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 24,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nacionalidade',
+    'label' => 'Nacionalidade',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 35,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_nome'
+  $field_instances['node-contato-field_nome'] = array(
+    'bundle' => 'contato',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 51,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nome',
+    'label' => 'Nome',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 77,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_nome_fantasia'
+  $field_instances['node-contato-field_nome_fantasia'] = array(
+    'bundle' => 'contato',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 43,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nome_fantasia',
+    'label' => 'Nome Fantasia',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_numero_cnpj'
+  $field_instances['node-contato-field_numero_cnpj'] = array(
+    'bundle' => 'contato',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '<a href="http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/cnpjreva/Cnpjreva_Solicitacao.asp" target="_blank">Consultar CNPJ</a>',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 45,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_numero_cnpj',
+    'label' => 'Número',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
       'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_numero_cpf'
+  $field_instances['node-contato-field_numero_cpf'] = array(
+    'bundle' => 'contato',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '<a href="http://www.receita.fazenda.gov.br/Aplicacoes/ATCTA/CPF/ConsultaPublica.asp" target="_blank">Receita Federal</a>',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 30,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_numero_cpf',
+    'label' => 'Número',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 46,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_numero_ctps'
+  $field_instances['node-contato-field_numero_ctps'] = array(
+    'bundle' => 'contato',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 19,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_numero_ctps',
+    'label' => 'Número',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 43,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_oab'
+  $field_instances['node-contato-field_oab'] = array(
+    'bundle' => 'contato',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 21,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_oab',
+    'label' => 'OAB',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 32,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_pessoa_de_contato'
+  $field_instances['node-contato-field_pessoa_de_contato'] = array(
+    'bundle' => 'contato',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 41,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pessoa_de_contato',
+    'label' => 'Pessoa de Contato',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 49,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_profissao_ocupacao'
+  $field_instances['node-contato-field_profissao_ocupacao'] = array(
+    'bundle' => 'contato',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 26,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_profissao_ocupacao',
+    'label' => 'Profissão / ocupação',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'shs',
+      'settings' => array(
+        'shs' => array(
+          'create_new_levels' => 0,
+          'create_new_terms' => 1,
+          'force_deepest' => 0,
+          'node_count' => 0,
+        ),
+      ),
+      'type' => 'taxonomy_shs',
+      'weight' => 37,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_razao_social'
+  $field_instances['node-contato-field_razao_social'] = array(
+    'bundle' => 'contato',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 49,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_razao_social',
+    'label' => 'Razão Social',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 78,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_serie_ctps'
+  $field_instances['node-contato-field_serie_ctps'] = array(
+    'bundle' => 'contato',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 20,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_serie_ctps',
+    'label' => 'Série',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 44,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_sexo'
+  $field_instances['node-contato-field_sexo'] = array(
+    'bundle' => 'contato',
+    'default_value' => array(
+      0 => array(
+        'value' => 'm',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 16,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sexo',
+    'label' => 'Sexo',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 31,
     ),
   );
 
@@ -642,6 +1642,12 @@ function sartori_features_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 12,
       ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_telefone_1',
@@ -658,7 +1664,7 @@ function sartori_features_field_default_field_instances() {
         'size' => 20,
       ),
       'type' => 'text_textfield',
-      'weight' => 13,
+      'weight' => 53,
     ),
   );
 
@@ -676,6 +1682,12 @@ function sartori_features_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 13,
       ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_telefone_2',
@@ -692,18 +1704,259 @@ function sartori_features_field_default_field_instances() {
         'size' => 20,
       ),
       'type' => 'text_textfield',
-      'weight' => 14,
+      'weight' => 55,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_telefone_3'
+  $field_instances['node-contato-field_telefone_3'] = array(
+    'bundle' => 'contato',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 36,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_telefone_3',
+    'label' => 'Telefone 3',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 57,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_tipo_1'
+  $field_instances['node-contato-field_tipo_1'] = array(
+    'bundle' => 'contato',
+    'default_value' => array(
+      0 => array(
+        'value' => 'residencial',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 37,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tipo_1',
+    'label' => 'Tipo',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 54,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_tipo_2'
+  $field_instances['node-contato-field_tipo_2'] = array(
+    'bundle' => 'contato',
+    'default_value' => array(
+      0 => array(
+        'value' => 'celular',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 38,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tipo_2',
+    'label' => 'Tipo',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 56,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_tipo_3'
+  $field_instances['node-contato-field_tipo_3'] = array(
+    'bundle' => 'contato',
+    'default_value' => array(
+      0 => array(
+        'value' => 'comercial',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 39,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tipo_3',
+    'label' => 'Tipo',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 58,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_tipo_de_escritorio'
+  $field_instances['node-contato-field_tipo_de_escritorio'] = array(
+    'bundle' => 'contato',
+    'default_value' => array(
+      0 => array(
+        'value' => 'outro',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 18,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tipo_de_escritorio',
+    'label' => 'Tipo de escritório',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 80,
+    ),
+  );
+
+  // Exported field_instance: 'node-contato-field_tipo_de_pessoa'
+  $field_instances['node-contato-field_tipo_de_pessoa'] = array(
+    'bundle' => 'contato',
+    'default_value' => array(
+      0 => array(
+        'value' => 'fisica',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 50,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tipo_de_pessoa',
+    'label' => 'Tipo de pessoa',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 76,
     ),
   );
 
   // Exported field_instance: 'node-contato-field_tipo_do_contato'
   $field_instances['node-contato-field_tipo_do_contato'] = array(
     'bundle' => 'contato',
-    'default_value' => array(
-      0 => array(
-        'value' => 'cliente',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -714,12 +1967,18 @@ function sartori_features_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 15,
       ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'fences_wrapper' => 'div',
     'field_name' => 'field_tipo_do_contato',
-    'label' => 'Tipo do Contato',
-    'required' => 0,
+    'label' => 'Tipo do contato',
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -727,44 +1986,48 @@ function sartori_features_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 1,
+      'type' => 'options_buttons',
+      'weight' => 79,
     ),
   );
 
-  // Exported field_instance: 'node-contato-field_uf'
-  $field_instances['node-contato-field_uf'] = array(
+  // Exported field_instance: 'node-contato-field_tratamento'
+  $field_instances['node-contato-field_tratamento'] = array(
     'bundle' => 'contato',
-    'default_value' => array(
-      0 => array(
-        'value' => 'SP',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'list',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 8,
+        'type' => 'text_default',
+        'weight' => 22,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_uf',
-    'label' => 'UF',
+    'field_name' => 'field_tratamento',
+    'label' => 'Tratamento',
     'required' => 0,
     'settings' => array(
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 9,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 33,
     ),
   );
 
@@ -786,11 +2049,17 @@ function sartori_features_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 11,
       ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'fences_wrapper' => 'div',
     'field_name' => 'field_website',
-    'label' => 'Web site',
+    'label' => 'Home page',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -803,7 +2072,7 @@ function sartori_features_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 12,
+      'weight' => 53,
     ),
   );
 
@@ -812,16 +2081,14 @@ function sartori_features_field_default_field_instances() {
     'bundle' => 'dados_da_pasta',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<a href="/sartori_b1/acao/novo" title="Adicionar Ação">+ Adicionar</a>',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 20,
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 54,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -831,7 +2098,6 @@ function sartori_features_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
     'field_name' => 'field_acao',
     'label' => 'Ação',
     'required' => 1,
@@ -840,15 +2106,17 @@ function sartori_features_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'entityreference',
+      'module' => 'shs',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'show_identifier' => 1,
-        'size' => 60,
+        'shs' => array(
+          'create_new_levels' => 0,
+          'create_new_terms' => 1,
+          'force_deepest' => 0,
+          'node_count' => 0,
+        ),
       ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 6,
+      'type' => 'taxonomy_shs',
+      'weight' => 70,
     ),
   );
 
@@ -857,7 +2125,7 @@ function sartori_features_field_default_field_instances() {
     'bundle' => 'dados_da_pasta',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<a href="/sartori_b1/contato/novo" title="Adicionar Contato">+ Adicionar</a>',
+    'description' => '<a href="/node/add/contato" title="Adicionar Contato" target="_blank">+ Adicionar</a>',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -886,14 +2154,9 @@ function sartori_features_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'show_identifier' => 1,
-        'size' => 60,
-      ),
+      'settings' => array(),
       'type' => 'options_select',
-      'weight' => 14,
+      'weight' => 78,
     ),
   );
 
@@ -902,7 +2165,7 @@ function sartori_features_field_default_field_instances() {
     'bundle' => 'dados_da_pasta',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<a href="/sartori_b1/contato/novo" title="Adicionar Contato">+ Adicionar</a>',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -911,7 +2174,7 @@ function sartori_features_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 16,
+        'weight' => 57,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -921,7 +2184,6 @@ function sartori_features_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
     'field_name' => 'field_advogado_responsavel',
     'label' => 'Advogado Responsável',
     'required' => 1,
@@ -933,7 +2195,7 @@ function sartori_features_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 10,
+      'weight' => 74,
     ),
   );
 
@@ -942,7 +2204,7 @@ function sartori_features_field_default_field_instances() {
     'bundle' => 'dados_da_pasta',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<a href="/sartori_b1/contato/novo" title="Adicionar Contato">+ Adicionar</a>',
+    'description' => '<a href="node/add/contato" title="Adicionar Contato" target="_blank">+ Adicionar</a>',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -970,15 +2232,53 @@ function sartori_features_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'entityreference',
+      'module' => 'options',
       'settings' => array(
         'match_operator' => 'CONTAINS',
         'path' => '',
-        'show_identifier' => 1,
         'size' => 60,
       ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 9,
+      'type' => 'options_select',
+      'weight' => 73,
+    ),
+  );
+
+  // Exported field_instance: 'node-dados_da_pasta-field_contrato'
+  $field_instances['node-dados_da_pasta-field_contrato'] = array(
+    'bundle' => 'dados_da_pasta',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 45,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_contrato',
+    'label' => 'Contrato',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 65,
     ),
   );
 
@@ -1194,7 +2494,7 @@ function sartori_features_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 3,
+      'weight' => 68,
     ),
   );
 
@@ -1311,7 +2611,7 @@ function sartori_features_field_default_field_instances() {
     'bundle' => 'dados_da_pasta',
     'default_value' => array(
       0 => array(
-        'target_id' => 80,
+        'tid' => 19,
       ),
     ),
     'deleted' => 0,
@@ -1319,12 +2619,10 @@ function sartori_features_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 28,
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 50,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1334,19 +2632,25 @@ function sartori_features_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
     'field_name' => 'field_escritorio_de_origem',
     'label' => 'Escritório de origem',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 24,
+      'module' => 'shs',
+      'settings' => array(
+        'shs' => array(
+          'create_new_levels' => 0,
+          'create_new_terms' => 1,
+          'force_deepest' => 0,
+          'node_count' => 0,
+        ),
+      ),
+      'type' => 'taxonomy_shs',
+      'weight' => 63,
     ),
   );
 
@@ -1355,7 +2659,7 @@ function sartori_features_field_default_field_instances() {
     'bundle' => 'dados_da_pasta',
     'default_value' => array(
       0 => array(
-        'target_id' => 80,
+        'tid' => 19,
       ),
     ),
     'deleted' => 0,
@@ -1363,12 +2667,10 @@ function sartori_features_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 29,
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 51,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1378,7 +2680,6 @@ function sartori_features_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
     'field_name' => 'field_escritorio_responsavel',
     'label' => 'Escritório responsável',
     'required' => 0,
@@ -1387,10 +2688,17 @@ function sartori_features_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 25,
+      'module' => 'shs',
+      'settings' => array(
+        'shs' => array(
+          'create_new_levels' => 0,
+          'create_new_terms' => 1,
+          'force_deepest' => 0,
+          'node_count' => 0,
+        ),
+      ),
+      'type' => 'taxonomy_shs',
+      'weight' => 64,
     ),
   );
 
@@ -1399,16 +2707,14 @@ function sartori_features_field_default_field_instances() {
     'bundle' => 'dados_da_pasta',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<a href="/sartori_b1/fase/novo" title="Adicionar Fase">+ Adicionar</a>',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 19,
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 53,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1418,7 +2724,6 @@ function sartori_features_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
     'field_name' => 'field_fase',
     'label' => 'Fase',
     'required' => 0,
@@ -1427,62 +2732,17 @@ function sartori_features_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'entityreference',
+      'module' => 'shs',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'show_identifier' => 1,
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 5,
-    ),
-  );
-
-  // Exported field_instance: 'node-dados_da_pasta-field_id_pasta'
-  $field_instances['node-dados_da_pasta-field_id_pasta'] = array(
-    'bundle' => 'dados_da_pasta',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => ' ',
+        'shs' => array(
+          'create_new_levels' => 0,
+          'create_new_terms' => 1,
+          'force_deepest' => 0,
+          'node_count' => 0,
         ),
-        'type' => 'number_integer',
-        'weight' => 30,
       ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_id_pasta',
-    'label' => 'Pasta',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 26,
+      'type' => 'taxonomy_shs',
+      'weight' => 69,
     ),
   );
 
@@ -1491,7 +2751,7 @@ function sartori_features_field_default_field_instances() {
     'bundle' => 'dados_da_pasta',
     'default_value' => array(
       0 => array(
-        'target_id' => 2,
+        'tid' => 20,
       ),
     ),
     'deleted' => 0,
@@ -1499,12 +2759,10 @@ function sartori_features_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 15,
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 52,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1514,7 +2772,6 @@ function sartori_features_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
     'field_name' => 'field_instancia_inicial',
     'label' => 'Instância Inicial',
     'required' => 1,
@@ -1523,10 +2780,17 @@ function sartori_features_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 4,
+      'module' => 'shs',
+      'settings' => array(
+        'shs' => array(
+          'create_new_levels' => 0,
+          'create_new_terms' => 0,
+          'force_deepest' => 0,
+          'node_count' => 0,
+        ),
+      ),
+      'type' => 'taxonomy_shs',
+      'weight' => 67,
     ),
   );
 
@@ -1539,15 +2803,10 @@ function sartori_features_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => ' ',
-        ),
-        'type' => 'number_integer',
-        'weight' => 31,
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 46,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1557,23 +2816,21 @@ function sartori_features_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
     'field_name' => 'field_n_inicial',
     'label' => 'Nº Inicial',
     'required' => 0,
     'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 27,
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 67,
     ),
   );
 
@@ -1586,15 +2843,10 @@ function sartori_features_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => ' ',
-        ),
-        'type' => 'number_integer',
-        'weight' => 32,
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 47,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1604,23 +2856,21 @@ function sartori_features_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
     'field_name' => 'field_n_principal',
     'label' => 'Nº Principal',
     'required' => 0,
     'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 28,
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 68,
     ),
   );
 
@@ -1629,16 +2879,14 @@ function sartori_features_field_default_field_instances() {
     'bundle' => 'dados_da_pasta',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<a href="/sartori_b1/natureza/novo" title="Adicionar Natureza">+ Adicionar</a>',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 21,
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 55,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1648,7 +2896,6 @@ function sartori_features_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
     'field_name' => 'field_natureza',
     'label' => 'Natureza',
     'required' => 1,
@@ -1657,15 +2904,56 @@ function sartori_features_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'entityreference',
+      'module' => 'shs',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'show_identifier' => 1,
-        'size' => 60,
+        'shs' => array(
+          'create_new_levels' => 0,
+          'create_new_terms' => 1,
+          'force_deepest' => 0,
+          'node_count' => 0,
+        ),
       ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 7,
+      'type' => 'taxonomy_shs',
+      'weight' => 71,
+    ),
+  );
+
+  // Exported field_instance: 'node-dados_da_pasta-field_objetos'
+  $field_instances['node-dados_da_pasta-field_objetos'] = array(
+    'bundle' => 'dados_da_pasta',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 60,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_objetos',
+    'label' => 'Objetos',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 80,
     ),
   );
 
@@ -1706,52 +2994,7 @@ function sartori_features_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 30,
-    ),
-  );
-
-  // Exported field_instance: 'node-dados_da_pasta-field_orgao_inicial'
-  $field_instances['node-dados_da_pasta-field_orgao_inicial'] = array(
-    'bundle' => 'dados_da_pasta',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '<a href="/sartori_b1/orgao-inicial/novo" title="Adicionar Orgão Inicial">+ Adicionar</a>',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 23,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_orgao_inicial',
-    'label' => 'Órgão inicial',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'show_identifier' => 1,
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 15,
+      'weight' => 81,
     ),
   );
 
@@ -1760,7 +3003,7 @@ function sartori_features_field_default_field_instances() {
     'bundle' => 'dados_da_pasta',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<a href="/sartori_b1/contato/novo" title="Adicionar Contato">+ Adicionar</a>',
+    'description' => '<a href="/node/add/contato" title="Adicionar Contato" target="_blank">+ Adicionar</a>',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1788,15 +3031,10 @@ function sartori_features_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'show_identifier' => 1,
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 13,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 77,
     ),
   );
 
@@ -1847,16 +3085,14 @@ function sartori_features_field_default_field_instances() {
     'bundle' => 'dados_da_pasta',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<a href="/sartori_b1/posicao-do-cliente/novo" title="Adicionar Posição do Cliente">+ Adicionar</a>',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 24,
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 58,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1866,7 +3102,6 @@ function sartori_features_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
     'field_name' => 'field_posicao_do_cliente',
     'label' => 'Posição do Cliente',
     'required' => 1,
@@ -1875,15 +3110,17 @@ function sartori_features_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'entityreference',
+      'module' => 'shs',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'show_identifier' => 1,
-        'size' => 60,
+        'shs' => array(
+          'create_new_levels' => 0,
+          'create_new_terms' => 1,
+          'force_deepest' => 0,
+          'node_count' => 0,
+        ),
       ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 11,
+      'type' => 'taxonomy_shs',
+      'weight' => 75,
     ),
   );
 
@@ -1892,16 +3129,14 @@ function sartori_features_field_default_field_instances() {
     'bundle' => 'dados_da_pasta',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<a href="/sartori_b1/rito/novo" title="Adicionar Rito">+ Adicionar</a>',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 22,
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 56,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1911,7 +3146,6 @@ function sartori_features_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
     'field_name' => 'field_rito',
     'label' => 'Rito',
     'required' => 1,
@@ -1920,15 +3154,17 @@ function sartori_features_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'entityreference',
+      'module' => 'shs',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'show_identifier' => 1,
-        'size' => 60,
+        'shs' => array(
+          'create_new_levels' => 0,
+          'create_new_terms' => 1,
+          'force_deepest' => 0,
+          'node_count' => 0,
+        ),
       ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 8,
+      'type' => 'taxonomy_shs',
+      'weight' => 72,
     ),
   );
 
@@ -1970,7 +3206,7 @@ function sartori_features_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 29,
+      'weight' => 69,
     ),
   );
 
@@ -2020,7 +3256,7 @@ function sartori_features_field_default_field_instances() {
     'bundle' => 'dados_da_pasta',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<a href="/sartori_b1/tabela-de-valores/novo" title="Adicionar Tabela de Valores">+ Adicionar</a>',
+    'description' => '<a href="/sartori_b1/tabela-de-valores/novo" title="Adicionar Tabela de Valores" target="_blank">+ Adicionar</a>',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -2048,15 +3284,58 @@ function sartori_features_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'entityreference',
+      'module' => 'options',
       'settings' => array(
         'match_operator' => 'CONTAINS',
         'path' => '',
-        'show_identifier' => 1,
         'size' => 60,
       ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 12,
+      'type' => 'options_select',
+      'weight' => 76,
+    ),
+  );
+
+  // Exported field_instance: 'node-dados_da_pasta-field_titulo'
+  $field_instances['node-dados_da_pasta-field_titulo'] = array(
+    'bundle' => 'dados_da_pasta',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 49,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_titulo',
+    'label' => 'Título',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'shs',
+      'settings' => array(
+        'shs' => array(
+          'create_new_levels' => 0,
+          'create_new_terms' => 1,
+          'force_deepest' => 0,
+          'node_count' => 0,
+        ),
+      ),
+      'type' => 'taxonomy_shs',
+      'weight' => 66,
     ),
   );
 
@@ -2098,236 +3377,6 @@ function sartori_features_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 33,
-    ),
-  );
-
-  // Exported field_instance: 'node-escritorio-body'
-  $field_instances['node-escritorio-body'] = array(
-    'bundle' => 'escritorio',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'body',
-    'label' => 'Descrição',
-    'required' => 0,
-    'settings' => array(
-      'display_summary' => 1,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 31,
-    ),
-  );
-
-  // Exported field_instance: 'node-fase-body'
-  $field_instances['node-fase-body'] = array(
-    'bundle' => 'fase',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'body',
-    'label' => 'Descrição',
-    'required' => 0,
-    'settings' => array(
-      'display_summary' => 1,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 31,
-    ),
-  );
-
-  // Exported field_instance: 'node-natureza-body'
-  $field_instances['node-natureza-body'] = array(
-    'bundle' => 'natureza',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'body',
-    'label' => 'Descrição',
-    'required' => 0,
-    'settings' => array(
-      'display_summary' => 1,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 31,
-    ),
-  );
-
-  // Exported field_instance: 'node-orgao_inicial-body'
-  $field_instances['node-orgao_inicial-body'] = array(
-    'bundle' => 'orgao_inicial',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'body',
-    'label' => 'Descrição',
-    'required' => 0,
-    'settings' => array(
-      'display_summary' => 1,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 31,
-    ),
-  );
-
-  // Exported field_instance: 'node-posicao_do_cliente-body'
-  $field_instances['node-posicao_do_cliente-body'] = array(
-    'bundle' => 'posicao_do_cliente',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'body',
-    'label' => 'Descrição',
-    'required' => 0,
-    'settings' => array(
-      'display_summary' => 1,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 31,
     ),
   );
 
@@ -2514,52 +3563,6 @@ function sartori_features_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-rito-body'
-  $field_instances['node-rito-body'] = array(
-    'bundle' => 'rito',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'body',
-    'label' => 'Descrição',
-    'required' => 0,
-    'settings' => array(
-      'display_summary' => 1,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 31,
-    ),
-  );
-
   // Exported field_instance: 'node-tabela_de_horas-body'
   $field_instances['node-tabela_de_horas-body'] = array(
     'bundle' => 'tabela_de_horas',
@@ -2606,44 +3609,133 @@ function sartori_features_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-localizacao-field_comarca'
+  $field_instances['taxonomy_term-localizacao-field_comarca'] = array(
+    'bundle' => 'localizacao',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_comarca',
+    'label' => 'Comarca',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-localizacao-field_unidade_federativa'
+  $field_instances['taxonomy_term-localizacao-field_unidade_federativa'] = array(
+    'bundle' => 'localizacao',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_unidade_federativa',
+    'label' => 'UF',
+    'required' => FALSE,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 1,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
-  t('<a href="/sartori_b1/acao/novo" title="Adicionar Ação">+ Adicionar</a>');
-  t('<a href="/sartori_b1/contato/novo" title="Adicionar Contato">+ Adicionar</a>');
-  t('<a href="/sartori_b1/fase/novo" title="Adicionar Fase">+ Adicionar</a>');
-  t('<a href="/sartori_b1/natureza/novo" title="Adicionar Natureza">+ Adicionar</a>');
-  t('<a href="/sartori_b1/orgao-inicial/novo" title="Adicionar Orgão Inicial">+ Adicionar</a>');
-  t('<a href="/sartori_b1/posicao-do-cliente/novo" title="Adicionar Posição do Cliente">+ Adicionar</a>');
-  t('<a href="/sartori_b1/rito/novo" title="Adicionar Rito">+ Adicionar</a>');
-  t('<a href="/sartori_b1/tabela-de-valores/novo" title="Adicionar Tabela de Valores">+ Adicionar</a>');
+  t('(ex: residência, matriz, escritório, secretaria...)');
+  t('<a href="/node/add/contato" title="Adicionar Contato" target="_blank">+ Adicionar</a>');
+  t('<a href="/sartori_b1/tabela-de-valores/novo" title="Adicionar Tabela de Valores" target="_blank">+ Adicionar</a>');
+  t('<a href="http://www.receita.fazenda.gov.br/Aplicacoes/ATCTA/CPF/ConsultaPublica.asp" target="_blank">Receita Federal</a>');
+  t('<a href="http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/cnpjreva/Cnpjreva_Solicitacao.asp" target="_blank">Consultar CNPJ</a>');
+  t('<a href="node/add/contato" title="Adicionar Contato" target="_blank">+ Adicionar</a>');
+  t('A opção [Colaborador do escritório] define a possibilidade de o contato ser o responsável (Advogado Responsável) por Pastas de Processos e Pastas de Serviços.');
   t('Advogado Contrário');
   t('Advogado Responsável');
   t('Ação');
   t('Bairro');
   t('CEP');
-  t('CNPJ');
-  t('Cidade');
+  t('CNPJ não disponível');
+  t('CPF não disponível');
+  t('Cada contato possuirá somente um endereço para correspondência, cobrança e/ou faturamento, não obrigatoriamente o mesmo.');
   t('Cliente');
+  t('Colaborador do escritório');
+  t('Comarca');
+  t('Complemento');
+  t('Contrato');
+  t('Código');
   t('Data');
   t('Data da Baixa');
   t('Data da Decisão');
   t('Data de distribuição');
+  t('Data de nascimento');
   t('Data do Encerramento');
   t('Data planejada para ingresso da ação');
+  t('Definir como endereço para');
   t('Descrição');
+  t('Doc. de identidade');
   t('E-mail');
-  t('Endereço');
-  t('Escritório');
   t('Escritório de origem');
   t('Escritório responsável');
+  t('Estado Civil');
   t('Fase');
+  t('Home page');
   t('Incidente');
   t('Inscrição Estadual');
   t('Inscrição Municipal');
   t('Instância Inicial');
+  t('Justificativa');
+  t('Local');
+  t('Localização');
+  t('Matrícula / Código');
+  t('Nacionalidade');
   t('Natureza');
+  t('Nome');
+  t('Nome Fantasia');
   t('Nº Inicial');
   t('Nº Principal');
+  t('Nº Título de eleitor');
+  t('Número');
+  t('OAB');
+  t('Objetos');
   t('Observação sobre o andamento');
   t('Observações');
   t('Origem do Andamento');
@@ -2651,21 +3743,31 @@ function sartori_features_field_default_field_instances() {
   t('Pasta');
   t('Pasta na qual o processo será arquivado');
   t('Perda ou Exito');
+  t('Pessoa de Contato');
   t('Posição do Cliente');
   t('Processo');
+  t('Profissão / ocupação');
+  t('Razão Social');
   t('Rito');
+  t('Rua / Número');
+  t('Sexo');
   t('Status');
   t('Status da pontualidade do ingresso da ação');
+  t('Série');
   t('Tabela de valores para horas trabalhadas');
   t('Telefone 1');
   t('Telefone 2');
+  t('Telefone 3');
+  t('Tipo');
+  t('Tipo de escritório');
+  t('Tipo de pessoa');
   t('Tipo do Andamento Processual');
-  t('Tipo do Contato');
+  t('Tipo do contato');
+  t('Tratamento');
+  t('Título');
   t('UF');
   t('Variação na data planejada para ingresso da ação');
   t('Vinculados');
-  t('Web site');
-  t('Órgão inicial');
 
   return $field_instances;
 }

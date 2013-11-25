@@ -10,270 +10,7 @@
 function sartori_features_views_default_views() {
   $export = array();
 
-  $view = new view;
-  $view->name = 'andamento_processual';
-  $view->description = '';
-  $view->tag = 'default';
-  $view->base_table = 'node';
-  $view->human_name = 'Andamento Processual';
-  $view->core = 7;
-  $view->api_version = '3.0';
-  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
-
-  /* Display: Master */
-  $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Andamento Processual';
-  $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
-  $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['query']['options']['query_comment'] = FALSE;
-  $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
-  $handler->display->display_options['style_plugin'] = 'table';
-  $handler->display->display_options['style_options']['columns'] = array(
-    'title' => 'title',
-    'field_processo' => 'field_processo',
-    'field_descricao' => 'field_descricao',
-    'field_tipo_andamento_processual' => 'field_tipo_andamento_processual',
-  );
-  $handler->display->display_options['style_options']['default'] = '-1';
-  $handler->display->display_options['style_options']['info'] = array(
-    'title' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_processo' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_descricao' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_tipo_andamento_processual' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-  );
-  $handler->display->display_options['style_options']['override'] = 1;
-  $handler->display->display_options['style_options']['sticky'] = 0;
-  $handler->display->display_options['style_options']['empty_table'] = 0;
-  /* Field: Content: Data */
-  $handler->display->display_options['fields']['field_data']['id'] = 'field_data';
-  $handler->display->display_options['fields']['field_data']['table'] = 'field_data_field_data';
-  $handler->display->display_options['fields']['field_data']['field'] = 'field_data';
-  $handler->display->display_options['fields']['field_data']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['field_data']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['field_data']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['field_data']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_data']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_data']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['field_data']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_data']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['field_data']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['field_data']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['field_data']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['field_data']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['field_data']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['field_data']['element_type'] = '0';
-  $handler->display->display_options['fields']['field_data']['element_label_colon'] = 1;
-  $handler->display->display_options['fields']['field_data']['element_wrapper_type'] = '0';
-  $handler->display->display_options['fields']['field_data']['element_default_classes'] = 0;
-  $handler->display->display_options['fields']['field_data']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['field_data']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_data']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['field_data']['settings'] = array(
-    'format_type' => 'long',
-    'fromto' => 'both',
-    'multiple_number' => '',
-    'multiple_from' => '',
-    'multiple_to' => '',
-  );
-  $handler->display->display_options['fields']['field_data']['field_api_classes'] = 1;
-  /* Field: Content: Descrição */
-  $handler->display->display_options['fields']['field_descricao']['id'] = 'field_descricao';
-  $handler->display->display_options['fields']['field_descricao']['table'] = 'field_data_field_descricao';
-  $handler->display->display_options['fields']['field_descricao']['field'] = 'field_descricao';
-  $handler->display->display_options['fields']['field_descricao']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['field_descricao']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['field_descricao']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['field_descricao']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_descricao']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_descricao']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['field_descricao']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_descricao']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['field_descricao']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['field_descricao']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['field_descricao']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['field_descricao']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['field_descricao']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['field_descricao']['element_type'] = '0';
-  $handler->display->display_options['fields']['field_descricao']['element_label_colon'] = 0;
-  $handler->display->display_options['fields']['field_descricao']['element_wrapper_type'] = '0';
-  $handler->display->display_options['fields']['field_descricao']['element_default_classes'] = 0;
-  $handler->display->display_options['fields']['field_descricao']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['field_descricao']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_descricao']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['field_descricao']['field_api_classes'] = 1;
-  /* Field: Content: Tipo do Andamento Processual */
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['id'] = 'field_tipo_andamento_processual';
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['table'] = 'field_data_field_tipo_andamento_processual';
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['field'] = 'field_tipo_andamento_processual';
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['element_type'] = '0';
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['element_label_colon'] = 0;
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['element_wrapper_type'] = '0';
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['element_default_classes'] = 0;
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['field_tipo_andamento_processual']['field_api_classes'] = 1;
-  /* Field: Content: Edit link */
-  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
-  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
-  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
-  $handler->display->display_options['fields']['edit_node']['label'] = '';
-  $handler->display->display_options['fields']['edit_node']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['edit_node']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['edit_node']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['edit_node']['alter']['external'] = FALSE;
-  $handler->display->display_options['fields']['edit_node']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['edit_node']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['edit_node']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['edit_node']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['edit_node']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['edit_node']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['edit_node']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['edit_node']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['edit_node']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['edit_node']['element_label_colon'] = 1;
-  $handler->display->display_options['fields']['edit_node']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['edit_node']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['edit_node']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['edit_node']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['edit_node']['text'] = 'Editar';
-  /* Field: Content: Delete link */
-  $handler->display->display_options['fields']['delete_node']['id'] = 'delete_node';
-  $handler->display->display_options['fields']['delete_node']['table'] = 'views_entity_node';
-  $handler->display->display_options['fields']['delete_node']['field'] = 'delete_node';
-  $handler->display->display_options['fields']['delete_node']['label'] = '';
-  $handler->display->display_options['fields']['delete_node']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['delete_node']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['delete_node']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['delete_node']['alter']['external'] = FALSE;
-  $handler->display->display_options['fields']['delete_node']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['delete_node']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['delete_node']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['delete_node']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['delete_node']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['delete_node']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['delete_node']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['delete_node']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['delete_node']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['delete_node']['element_label_colon'] = 1;
-  $handler->display->display_options['fields']['delete_node']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['delete_node']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['delete_node']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['delete_node']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['delete_node']['text'] = 'Deletar';
-  /* Sort criterion: Content: Tipo do Andamento Processual (field_tipo_andamento_processual) */
-  $handler->display->display_options['sorts']['field_tipo_andamento_processual_value']['id'] = 'field_tipo_andamento_processual_value';
-  $handler->display->display_options['sorts']['field_tipo_andamento_processual_value']['table'] = 'field_data_field_tipo_andamento_processual';
-  $handler->display->display_options['sorts']['field_tipo_andamento_processual_value']['field'] = 'field_tipo_andamento_processual_value';
-  /* Sort criterion: Content: Data (field_data) */
-  $handler->display->display_options['sorts']['field_data_value']['id'] = 'field_data_value';
-  $handler->display->display_options['sorts']['field_data_value']['table'] = 'field_data_field_data';
-  $handler->display->display_options['sorts']['field_data_value']['field'] = 'field_data_value';
-  /* Contextual filter: Content: Processo (field_processo) */
-  $handler->display->display_options['arguments']['field_processo_target_id']['id'] = 'field_processo_target_id';
-  $handler->display->display_options['arguments']['field_processo_target_id']['table'] = 'field_data_field_processo';
-  $handler->display->display_options['arguments']['field_processo_target_id']['field'] = 'field_processo_target_id';
-  $handler->display->display_options['arguments']['field_processo_target_id']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_processo_target_id']['default_argument_skip_url'] = 0;
-  $handler->display->display_options['arguments']['field_processo_target_id']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_processo_target_id']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_processo_target_id']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['field_processo_target_id']['break_phrase'] = 0;
-  $handler->display->display_options['arguments']['field_processo_target_id']['not'] = 0;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'andamento_processual' => 'andamento_processual',
-  );
-  $handler->display->display_options['filters']['type']['expose']['use_operator'] = FALSE;
-  $handler->display->display_options['filters']['type']['expose']['required'] = FALSE;
-  $handler->display->display_options['filters']['type']['expose']['remember'] = FALSE;
-  $handler->display->display_options['filters']['type']['expose']['multiple'] = FALSE;
-
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'block');
-  $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Processo (field_processo) */
-  $handler->display->display_options['arguments']['field_processo_target_id']['id'] = 'field_processo_target_id';
-  $handler->display->display_options['arguments']['field_processo_target_id']['table'] = 'field_data_field_processo';
-  $handler->display->display_options['arguments']['field_processo_target_id']['field'] = 'field_processo_target_id';
-  $handler->display->display_options['arguments']['field_processo_target_id']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['field_processo_target_id']['default_argument_type'] = 'node';
-  $handler->display->display_options['arguments']['field_processo_target_id']['default_argument_skip_url'] = 0;
-  $handler->display->display_options['arguments']['field_processo_target_id']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_processo_target_id']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_processo_target_id']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['field_processo_target_id']['break_phrase'] = 0;
-  $handler->display->display_options['arguments']['field_processo_target_id']['not'] = 0;
-  $translatables['andamento_processual'] = array(
-    t('Master'),
-    t('Andamento Processual'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Data'),
-    t('Descrição'),
-    t('Tipo do Andamento Processual'),
-    t('Editar'),
-    t('Deletar'),
-    t('All'),
-    t('Block'),
-  );
-  $export['andamento_processual'] = $view;
-
-  $view = new view;
+  $view = new view();
   $view->name = 'contatos';
   $view->description = '';
   $view->tag = 'default';
@@ -286,6 +23,7 @@ function sartori_features_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Contatos';
+  $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -315,56 +53,13 @@ function sartori_features_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  $handler->display->display_options['style_options']['override'] = 1;
-  $handler->display->display_options['style_options']['sticky'] = 0;
-  $handler->display->display_options['style_options']['empty_table'] = 0;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = 'Nome';
-  $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = 1;
-  $handler->display->display_options['fields']['title']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['title']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['title']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['title']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Field: Content: Cidade */
-  $handler->display->display_options['fields']['field_cidade']['id'] = 'field_cidade';
-  $handler->display->display_options['fields']['field_cidade']['table'] = 'field_data_field_cidade';
-  $handler->display->display_options['fields']['field_cidade']['field'] = 'field_cidade';
-  $handler->display->display_options['fields']['field_cidade']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['field_cidade']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['field_cidade']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['field_cidade']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_cidade']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_cidade']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['field_cidade']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_cidade']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['field_cidade']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['field_cidade']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['field_cidade']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['field_cidade']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['field_cidade']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['field_cidade']['element_label_colon'] = 1;
-  $handler->display->display_options['fields']['field_cidade']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['field_cidade']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['field_cidade']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_cidade']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['field_cidade']['field_api_classes'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -377,6 +72,18 @@ function sartori_features_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'contato' => 'contato',
+  );
+  /* Filter criterion: Content: Tipo do contato (field_tipo_do_contato:delta) */
+  $handler->display->display_options['filters']['delta']['id'] = 'delta';
+  $handler->display->display_options['filters']['delta']['table'] = 'field_data_field_tipo_do_contato';
+  $handler->display->display_options['filters']['delta']['field'] = 'delta';
+  $handler->display->display_options['filters']['delta']['value']['value'] = 'orgao';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
@@ -400,6 +107,20 @@ function sartori_features_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+
+  /* Display: Contato por órgão */
+  $handler = $view->new_display('entityreference', 'Contato por órgão', 'entityreference_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'entityreference_style';
+  $handler->display->display_options['style_options']['search_fields'] = array(
+    'title' => 'title',
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'entityreference_fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $translatables['contatos'] = array(
     t('Master'),
     t('Contatos'),
@@ -412,417 +133,16 @@ function sartori_features_views_default_views() {
     t('Items per page'),
     t('- All -'),
     t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
     t('Nome'),
-    t('Cidade'),
     t('Page'),
     t('Block'),
+    t('Contato por órgão'),
   );
   $export['contatos'] = $view;
-
-  $view = new view;
-  $view->name = 'lista_de_processos';
-  $view->description = '';
-  $view->tag = 'default';
-  $view->base_table = 'node';
-  $view->human_name = 'Lista de Processos';
-  $view->core = 7;
-  $view->api_version = '3.0';
-  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
-
-  /* Display: Master */
-  $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Processos';
-  $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
-  $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['query']['options']['query_comment'] = FALSE;
-  $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
-  $handler->display->display_options['style_plugin'] = 'table';
-  $handler->display->display_options['style_options']['columns'] = array(
-    'title' => 'title',
-  );
-  $handler->display->display_options['style_options']['default'] = '-1';
-  $handler->display->display_options['style_options']['info'] = array(
-    'title' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-  );
-  $handler->display->display_options['style_options']['override'] = 1;
-  $handler->display->display_options['style_options']['sticky'] = 0;
-  $handler->display->display_options['style_options']['empty_table'] = 0;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['title']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['title']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Field: Content: Nid */
-  $handler->display->display_options['fields']['nid']['id'] = 'nid';
-  $handler->display->display_options['fields']['nid']['table'] = 'node';
-  $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  $handler->display->display_options['fields']['nid']['label'] = '';
-  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['nid']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['nid']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['nid']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['nid']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['nid']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['nid']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['nid']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['nid']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['nid']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['nid']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['nid']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['nid']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['nid']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['nid']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['nid']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['nid']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['nid']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['nid']['link_to_node'] = 0;
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = 'Andamento processual';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = 'Andamento processual';
-  $handler->display->display_options['fields']['nothing']['alter']['make_link'] = 1;
-  $handler->display->display_options['fields']['nothing']['alter']['path'] = 'andamento-processual/novo?processo=[nid]';
-  $handler->display->display_options['fields']['nothing']['alter']['absolute'] = 1;
-  $handler->display->display_options['fields']['nothing']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['nothing']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['nothing']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['nothing']['element_label_colon'] = 1;
-  $handler->display->display_options['fields']['nothing']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['nothing']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['nothing']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['nothing']['hide_alter_empty'] = 0;
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Contextual filter: Content: Pasta (field_pasta) */
-  $handler->display->display_options['arguments']['field_pasta_target_id']['id'] = 'field_pasta_target_id';
-  $handler->display->display_options['arguments']['field_pasta_target_id']['table'] = 'field_data_field_pasta';
-  $handler->display->display_options['arguments']['field_pasta_target_id']['field'] = 'field_pasta_target_id';
-  $handler->display->display_options['arguments']['field_pasta_target_id']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_pasta_target_id']['summary']['format'] = 'default_summary';
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'processo' => 'processo',
-  );
-  $handler->display->display_options['filters']['type']['group'] = 1;
-
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['defaults']['arguments'] = FALSE;
-  $handler->display->display_options['path'] = 'processos';
-  $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Processos';
-  $handler->display->display_options['menu']['weight'] = '0';
-  $handler->display->display_options['menu']['name'] = 'main-menu';
-  $handler->display->display_options['menu']['context'] = 0;
-
-  /* Display: Entity Reference */
-  $handler = $view->new_display('entityreference', 'Entity Reference', 'entityreference_1');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'entityreference_style';
-  $handler->display->display_options['style_options']['search_fields'] = array(
-    'title' => 'title',
-    'nid' => 0,
-    'nothing' => 0,
-  );
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'entityreference_fields';
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'processo' => 'processo',
-  );
-  $handler->display->display_options['filters']['type']['group'] = 1;
-
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page_1');
-  $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Processo (field_processo) */
-  $handler->display->display_options['arguments']['field_processo_target_id']['id'] = 'field_processo_target_id';
-  $handler->display->display_options['arguments']['field_processo_target_id']['table'] = 'field_data_field_processo';
-  $handler->display->display_options['arguments']['field_processo_target_id']['field'] = 'field_processo_target_id';
-  $handler->display->display_options['arguments']['field_processo_target_id']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_processo_target_id']['default_argument_skip_url'] = 0;
-  $handler->display->display_options['arguments']['field_processo_target_id']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_processo_target_id']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_processo_target_id']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['field_processo_target_id']['break_phrase'] = 0;
-  $handler->display->display_options['arguments']['field_processo_target_id']['not'] = 0;
-  $handler->display->display_options['path'] = 'processo';
-
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'block_1');
-  $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Pasta (field_pasta) */
-  $handler->display->display_options['arguments']['field_pasta_target_id']['id'] = 'field_pasta_target_id';
-  $handler->display->display_options['arguments']['field_pasta_target_id']['table'] = 'field_data_field_pasta';
-  $handler->display->display_options['arguments']['field_pasta_target_id']['field'] = 'field_pasta_target_id';
-  $handler->display->display_options['arguments']['field_pasta_target_id']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['field_pasta_target_id']['default_argument_type'] = 'node';
-  $handler->display->display_options['arguments']['field_pasta_target_id']['default_argument_skip_url'] = 0;
-  $handler->display->display_options['arguments']['field_pasta_target_id']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_pasta_target_id']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_pasta_target_id']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['field_pasta_target_id']['break_phrase'] = 0;
-  $handler->display->display_options['arguments']['field_pasta_target_id']['not'] = 0;
-  $translatables['lista_de_processos'] = array(
-    t('Master'),
-    t('Processos'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('Andamento processual'),
-    t('andamento-processual/novo?processo=[nid]'),
-    t('All'),
-    t('Page'),
-    t('Entity Reference'),
-    t('Block'),
-  );
-  $export['lista_de_processos'] = $view;
-
-  $view = new view;
-  $view->name = 'pastas';
-  $view->description = '';
-  $view->tag = 'default';
-  $view->base_table = 'node';
-  $view->human_name = 'Pastas';
-  $view->core = 7;
-  $view->api_version = '3.0';
-  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
-
-  /* Display: Master */
-  $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Pastas';
-  $handler->display->display_options['use_ajax'] = TRUE;
-  $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
-  $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['query']['options']['query_comment'] = FALSE;
-  $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['exposed_form']['options']['autosubmit'] = 1;
-  $handler->display->display_options['exposed_form']['options']['autosubmit_hide'] = 1;
-  $handler->display->display_options['pager']['type'] = 'none';
-  $handler->display->display_options['style_plugin'] = 'table';
-  /* Footer: Broken/missing handler */
-  $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
-  $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
-  $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
-  $handler->display->display_options['footer']['area_text_custom']['label'] = 'Adicionar Pasta';
-  $handler->display->display_options['footer']['area_text_custom']['empty'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['title']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['title']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['title']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Sort criterion: Content: Title */
-  $handler->display->display_options['sorts']['title']['id'] = 'title';
-  $handler->display->display_options['sorts']['title']['table'] = 'node';
-  $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Title */
-  $handler->display->display_options['filters']['title']['id'] = 'title';
-  $handler->display->display_options['filters']['title']['table'] = 'node';
-  $handler->display->display_options['filters']['title']['field'] = 'title';
-  $handler->display->display_options['filters']['title']['operator'] = 'contains';
-  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
-  $handler->display->display_options['filters']['title']['expose']['required'] = 0;
-  $handler->display->display_options['filters']['title']['expose']['multiple'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'pasta' => 'pasta',
-  );
-  $handler->display->display_options['filters']['type']['expose']['use_operator'] = FALSE;
-  $handler->display->display_options['filters']['type']['expose']['required'] = FALSE;
-  $handler->display->display_options['filters']['type']['expose']['remember'] = FALSE;
-  $handler->display->display_options['filters']['type']['expose']['multiple'] = FALSE;
-
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'block');
-
-  $view = new view;
-  $view->name = 'processo';
-  $view->description = '';
-  $view->tag = 'default';
-  $view->base_table = 'node';
-  $view->human_name = 'Processo';
-  $view->core = 7;
-  $view->api_version = '3.0';
-  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
-
-  /* Display: Master */
-  $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Processo';
-  $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
-  $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['query']['options']['query_comment'] = FALSE;
-  $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['row_options']['hide_empty'] = 0;
-  $handler->display->display_options['row_options']['default_field_elements'] = 0;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['title']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['title']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Contextual filter: Content: Nid */
-  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
-  $handler->display->display_options['arguments']['nid']['table'] = 'node';
-  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
-  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['nid']['default_argument_skip_url'] = 0;
-  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['nid']['break_phrase'] = 0;
-  $handler->display->display_options['arguments']['nid']['not'] = 0;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Broken/missing handler */
-  $handler->display->display_options['filters']['combine']['id'] = 'combine';
-  $handler->display->display_options['filters']['combine']['table'] = 'views';
-  $handler->display->display_options['filters']['combine']['field'] = 'combine';
-
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'view_processo';
-
-  /* Display: Bloco */
-  $handler = $view->new_display('block', 'Bloco', 'block_1');
-  $translatables['processo'] = array(
-    t('Master'),
-    t('Processo'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('All'),
-    t('Page'),
-    t('Bloco'),
-  );
-  $export['processo'] = $view;
 
   return $export;
 }

@@ -1,21 +1,26 @@
 (function ($) {
-	$(document).ready(function() {
-		// $(".show-filters a").unbind();
-		// $(".hide-filters a").unbind();
-		// if ($("body.page-node-108")) {
-		// 	var filter = $(".view-id-pastas_dashboard .view-filters")
 
-		// 	$(".show-filters a").live("click", function(){
-  //       filter.slideDown("slow");
-  //       $(this).hide();
-  //       $(".hide-filters a").show();
-  // 	  });
+function accordeonShowHideRules() {
+  $('#edit-field-tipo-de-pessoa-und-fisica').click(function() {
+    $('h3.accordion-item:contains("Dados Pessoais")').show();
+    $('h3.accordion-item:contains("Dados da Empresa / Órgão")').hide();
+    $('h3.accordion-item:contains("Dados da Empresa / Órgão")').next().hide();
+  });
+  $('#edit-field-tipo-de-pessoa-und-juridica').click(function() {
+    $('h3.accordion-item:contains("Dados da Empresa / Órgão")').show();
+    $('h3.accordion-item:contains("Dados Pessoais")').hide();
+    $('h3.accordion-item:contains("Dados Pessoais")').next().hide();
+  });
+}
 
-  // 	  $(".hide-filters a").live("click", function(){
-  //       filter.slideUp("slow");
-  //       $(this).hide();
-  //       $(".show-filters a").show();
-  // 	  });
-		// }
-	});
+$(document).ready(function() {
+  if ($('body.page-add-contato').length > 0) {
+    $('h3.accordion-item:contains("Dados da Empresa / Órgão")').hide();
+    $('h3.accordion-item:contains("Dados da Empresa / Órgão")').next().hide();
+
+    accordeonShowHideRules();
+  }
+
+});
+
 })(jQuery);

@@ -896,22 +896,6 @@ input.form-autocomplete {background-image:none !important;}
 
 #block-blog-recent .content .more-link {display:none;}
 
-.view-id-pastas_dashboard .view-content {overflow-x: auto; white-space: nowrap;}
-.view-id-pastas .form-text {width:100%;}
-/*.view-id-pastas_dashboard .view-filters {display:none;}*/
-.show-filters a {display:none;}
-.hide-filters a {display:none;}
-.form-select {width: 280px; height: 35px;}
-#edit-field-id-pasta-value-wrapper,
-#edit-field-fase-target-id-wrapper,
-#edit-field-rito-target-id-wrapper,
-.views-submit-button {clear:both;}
-.form-wrapper,
-.form-item {float: left; margin-right: 10px;}
-.field-name-field-status {float: left; clear: both;}
-.field-name-field-data-de-distribuicao {float: right; margin-right: 85px;}
-.vertical-tabs {display: none;}
-
 /**************/
 
 /* subpages */
@@ -980,3 +964,48 @@ input.form-autocomplete {background-image:none !important;}
 /* End page-programs */
 
 /************/
+
+.view-id-processos .view-content {overflow-x: auto; white-space: nowrap;}
+.view-id-pastas .form-text {width:100%;}
+/*.view-id-pastas_dashboard .view-filters {display:none;}*/
+.form-select {width: 280px; height: 35px;}
+#block-views-processos-block-1 .view-id-processos #edit-title-op {width: 220px !important; height: 35px;}
+#block-views-processos-block-1 .view-id-processos #edit-title--2,
+#block-views-processos-block-1 .view-id-processos #edit-title {width: 218px !important; height: 35px; padding: 0; margin-top: 5px;}
+/*input[type="text"], .form-select, .form-item {width: 220px; height: 35px; !important}*/
+/*#edit-field-id-pasta-value-wrapper,*/
+/*#edit-field-fase-target-id-wrapper,*/
+/*#edit-field-rito-target-id-wrapper,*/
+.page-node-add-dados-da-pasta .field-name-field-natureza,
+.page-node-add-dados-da-pasta .field-name-field-posicao-do-cliente,
+.page-node-add-dados-da-pasta .field-name-field-parte-contraria,
+.page-node-add-contato .field-name-field-tratamento,
+.page-node-add-contato .field-name-field-nacionalidade,
+.page-node-add-contato .field-name-field-doc-de-identidade,
+.page-node-add-contato .field-name-field-endereco,
+.page-node-add-contato .field-name-field-telefone-2,
+.page-node-add-contato .field-name-field-telefone-3,
+.page-node-add-contato .form-item-field-endereco-para-und-cobranca,
+.page-node-add-contato .form-item-field-endereco-para-und-faturamento,
+.views-submit-button {clear:both;}
+.field-name-field-n-titulo-de-eleitor {margin-bottom: -1px}
+.form-wrapper,
+.form-item {float: left; margin-right: 10px;}
+.field-name-field-status {float: left; clear: both;}
+.field-name-field-data-de-distribuicao {float: right; margin-right: 85px;}
+.vertical-tabs {display: none;}
+body.node-type-contato .accordion-item {clear:both;}
+body.page-add-contato .node-contato-form .form-item-title {display:none;}
+#comments {display:none;}
+.page-node-add-dados-da-pasta .field-type-taxonomy-term-reference,
+.page-node-add-contato .field-type-taxonomy-term-reference {width: 44%}
+.page-node-add-dados-da-pasta .shs-term-add-new-wrapper {margin-left: 0px; margin-top: 3px;}
+.page-node-90 .form-item-title {margin-bottom: -2px;}
+.page-node-add-contato .field-name-field-sexo {margin-right: 111px;}
+.page-node-add-contato .field-name-field-profissao-ocupacao {margin-top: -4px;}
+.page-node-add-contato .field-group-fieldset,
+.page-node-add-contato #node_contato_form_group_cnpj,
+.page-node-add-contato #node_contato_form_group_telefones {margin-left: -15px; padding-right: 5px;}
+.page-node-add-contato .field-name-field-serie-ctps {margin-right: 1px;}
+.page-node-add-contato .field-name-field-localizacao {float: right; margin-right: 66px; margin-bottom: -10px;}
+.page-node-add-contato #node_contato_form_group_config_endereco .description {margin-left: 225px;}
