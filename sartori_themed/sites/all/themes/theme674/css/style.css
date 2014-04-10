@@ -51,7 +51,7 @@ h3 a {color:#3a3b41;}
 .not-front #header {margin-bottom:14px;}
 .section-1 {height:122px;}
 .section-1 .col1 {float:left;}
-#logo {display:block; margin:32px 0 0 8px;}
+#logo {display:block; margin:10px 0 0 8px;}
 
 .section-1 .col2 {float:right;}
 .region-user-menu {overflow:hidden;}
@@ -1009,3 +1009,4 @@ body.page-add-contato .node-contato-form .form-item-title {display:none;}
 .page-node-add-contato .field-name-field-serie-ctps {margin-right: 1px;}
 .page-node-add-contato .field-name-field-localizacao {float: right; margin-right: 66px; margin-bottom: -10px;}
 .page-node-add-contato #node_contato_form_group_config_endereco .description {margin-left: 225px;}
+#edit-field-parte-contraria-und {height: 125px;}
