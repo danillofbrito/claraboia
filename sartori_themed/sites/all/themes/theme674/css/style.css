@@ -977,8 +977,11 @@ input.form-autocomplete {background-image:none !important;}
 /*#edit-field-fase-target-id-wrapper,*/
 /*#edit-field-rito-target-id-wrapper,*/
 .page-node-add-dados-da-pasta .field-name-field-natureza,
+.node-type-dados-da-pasta .field-name-field-natureza,
 .page-node-add-dados-da-pasta .field-name-field-posicao-do-cliente,
+.node-type-dados-da-pasta .field-name-field-posicao-do-cliente,
 .page-node-add-dados-da-pasta .field-name-field-parte-contraria,
+.node-type-dados-da-pasta .field-name-field-parte-contraria,
 .page-node-add-contato .field-name-field-tratamento,
 .page-node-add-contato .field-name-field-nacionalidade,
 .page-node-add-contato .field-name-field-doc-de-identidade,
@@ -998,8 +1001,10 @@ body.node-type-contato .accordion-item {clear:both;}
 body.page-add-contato .node-contato-form .form-item-title {display:none;}
 #comments {display:none;}
 .page-node-add-dados-da-pasta .field-type-taxonomy-term-reference,
+.node-type-dados-da-pasta .field-type-taxonomy-term-reference,
 .page-node-add-contato .field-type-taxonomy-term-reference {width: 44%}
 .page-node-add-dados-da-pasta .shs-term-add-new-wrapper {margin-left: 0px; margin-top: 3px;}
+.node-type-dados-da-pasta .shs-term-add-new-wrapper {margin-left: 0px; margin-top: 3px;}
 .page-node-90 .form-item-title {margin-bottom: -2px;}
 .page-node-add-contato .field-name-field-sexo {margin-right: 111px;}
 .page-node-add-contato .field-name-field-profissao-ocupacao {margin-top: -4px;}
@@ -1009,4 +1014,9 @@ body.page-add-contato .node-contato-form .form-item-title {display:none;}
 .page-node-add-contato .field-name-field-serie-ctps {margin-right: 1px;}
 .page-node-add-contato .field-name-field-localizacao {float: right; margin-right: 66px; margin-bottom: -10px;}
 .page-node-add-contato #node_contato_form_group_config_endereco .description {margin-left: 225px;}
-#edit-field-parte-contraria-und {height: 125px;}
+#edit_field_parte_contraria_und_chosen {height: 125px;}
+body.page-node-add-pedido #edit-field-objeto{margin-bottom: 1px}
+body.page-node-add-dados-da-pasta  #edit-field-n-principal{display: none}
+#edit-field-tipo-andamento-processual {clear: both;}
+.view-contatos th {width: 11%}
+.view-contatos th.views-field-title {width: 23%}
