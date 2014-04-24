@@ -21,6 +21,12 @@ function sartori_form_alter(&$form, &$form_state, $form_id) {
   }
 
   if ($form_id == "andamento_processual_node_form"){
+    if (isset($_GET['proc'])) {
+      $processo = $_GET['proc'];
+      $form['field_processo'][LANGUAGE_NONE]['#default_value'] = $processo;
+      $form['field_processo']['#disabled'] = TRUE;
+    }
+
     $form['#validate'][] = 'sartori_acompanhamento_validate';
 	}
 
