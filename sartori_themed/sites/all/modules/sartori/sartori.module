@@ -27,7 +27,7 @@ function sartori_form_alter(&$form, &$form_state, $form_id) {
       $form['field_processo']['#disabled'] = TRUE;
     }
 
-    $form['#validate'][] = 'sartori_acompanhamento_validate';
+    // $form['#validate'][] = 'sartori_acompanhamento_validate';
 	}
 
 	if ($form_id == "dados_da_pasta_node_form") {
