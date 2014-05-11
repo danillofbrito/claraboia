@@ -437,3 +437,7 @@ function theme674_menu_local_tasks(&$vars) {
 
   return $output;
 }
+
+function theme674_date_combo($variables) {
+  return theme('form_element', $variables);
+}

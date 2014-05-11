@@ -1,0 +1,14 @@
+Necessidades encontradas:
+
+Poder digitalizar o contrato (para sócios), anexando ao contrato virtual.
+
+Inserção de contratos e consultas. 
+-- Poder adicionar quantas partes contrárias e quantos autores quiser em um processo. 
+
+Inserir campo "fase do processo", que muda coforme a vara.
+
+Acompanhamento poder inserir todo tipo de anexo. 
+Mais de um documento por acompanhamento.
+Poder filtrar o acompanhamento por documentos
+
+Acesso para clientes ao sistema, apenas visualização. (clientes como usuários)
